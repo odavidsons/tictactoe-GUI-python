@@ -52,7 +52,7 @@ class App(tk.Frame):
     #Draw a player shape on the board. It receives the position and the button that was pressed to be able to update it's text
     #Also checks if there is a winner when a shape is drawn
     def drawShape(self,row,col,buttonUpdate):
-        if player1 and player2 != "":
+        if self.player1 and self.player2 != "":
             current_player = self.turn
             if self.board[row][col] == "-":
                 self.board[row][col]= self.playerTurn()
@@ -194,12 +194,14 @@ scoreP2.pack()
 #Display player scores
 playersFrame = tk.Frame(gameInfo,highlightbackground="gray",highlightthickness=1)
 playersFrame.pack(side="left")
+label2 =tk.Label(playersFrame,text="Players")
+label2.pack(side="top")
 labelP1 =tk.Label(playersFrame,text="Player 1:")
 labelP1.pack()
 labelP2 =tk.Label(playersFrame,text="Player 2:")
 labelP2.pack()
 
-resetFrame = tk.Frame(game)
+resetFrame = tk.Frame(game,pady=5)
 resetFrame.pack(fill="x")
 resetBtn = tk.Button(resetFrame,text="Reset game",command=game.resetGame)
 resetBtn.pack()
