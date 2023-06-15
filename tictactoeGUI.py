@@ -165,7 +165,7 @@ class App(tk.Frame):
         global player1,player2
 
         player1 = input1
-        labelP1.config(text=player1+": X: ")
+        labelP1.config(text=player1+": X")
         player2 = input2
         labelP2.config(text=player2+": O")
         inputForm.destroy()
