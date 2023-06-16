@@ -2,7 +2,7 @@
 Simple tic tac toe game made with the tkinter GUI toolkit
 Enables the players to choose their displayed names, keep track of the score count and reset the game.
 
-Made by David Santos - https://github.com/odavidsons
+Made by David Santos - https://github.com/odavidsons/tictactoe-GUI-python
 """
 
 import tkinter as tk
